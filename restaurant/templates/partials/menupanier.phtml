@@ -1,0 +1,11 @@
+<?php 
+$nbproduits=0;
+$montantCommande=0;
+ if (!empty($_SESSION['panier'])){
+		foreach ($_SESSION['panier'] as  $element){
+		 $nbproduits = $nbproduits +  $element[4];	
+         $montantCommande = $montantCommande + floatval($element[2])* $element[4];
+		 }
+ }// 	<?php endforeach ;<i class="fa fa-shopping-basket" aria-hidden="true"></i>
+?>	
+ <p> <img id ="caddy" src="images/caddy.png" /> Nb articles <span><?=$nbproduits ?></span> pour un montant de  <span><?=$montantCommande ?><span>  euros </p>

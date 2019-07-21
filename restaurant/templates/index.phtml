@@ -1,0 +1,59 @@
+<?php
+require_once('templates/partials/header.phtml');
+?>
+	<main>
+		<h2> Nos Informations</h2>
+		<div id="infos">
+					<ul>				
+						<li> Adresse: galerie comerciale des Terrasses du port 9 quai du lazaret  13002 MARSEILLE </li>
+						<li> Telephone:  06.00.00.00</li>
+						<li> Ouvert le soir seulement et le weekend midi et soir </li>
+					</ul>
+		</div>
+		<div id="listeplats">
+		<h2> La liste de nos plats</h2>
+			<div id="elements">
+			   <h2> Nos entrées</h2>
+				<?php foreach ($entrees as $key => $entree) :?>
+					<div id="plat">
+						<p> <img src="<?=$entree['image']?>" alt="<?=$entree['titre']?>" /></p>
+						<h3> <?=$entree['titre']?></h3>
+				        <p> <?=$entree['description']?></p>
+						<p> mon prix:<?=$entree['prix']?> euros</p>
+					    <a href="libraries/application.php?task=panier&id=<?=$entree['id']?>">Ajouter au panier</a>
+					 </div>  		
+					<?php endforeach ; ?>
+					
+			</div>
+
+			<div id="elements">
+			   <h2> Nos plats</h2>
+				<?php foreach ($plats as $key => $plat) :?>
+					<div id="plat">
+						<p> <img src="<?=$plat['image']?>" alt=<?=$plat['titre']?>"/></p>
+						<h3> <?=$plat['titre']?></h3>
+				        <p> <?=$plat['description']?></p>
+						<p> mon prix:<?=$plat['prix']?> euros</p>
+						<a href="libraries/application.php?task=panier&id=<?=$plat['id']?>">Ajouter au panier</a>		
+				    </div> 
+				    <?php endforeach ; ?>
+			</div>
+
+			<div id="elements">
+			   <h2> Nos desserts</h2>
+				<?php foreach ($desserts as $key => $dessert) :?>
+					<div id="plat">
+						<p> <img src="<?=$dessert['image']?>" alt=<?=$dessert['titre']?>"/></p>
+						<h3> <?=$dessert['titre']?></h3>
+				        <p> <?=$dessert['description']?></p>
+						<p> mon prix:<?=$dessert['prix']?> euros</p>
+						<a href="libraries/application.php?task=panier&id=<?=$dessert['id']?>">Ajouter au panier</a>		
+					</div> 
+				    <?php endforeach ; ?>
+			</div>
+        </div>
+	</main>
+<?php
+require_once('templates/partials/footer.phtml');
+?>
+

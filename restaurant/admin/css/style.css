@@ -1,0 +1,120 @@
+
+html {
+	  box-sizing: border-box;
+	  font-size: 62.5%; 
+	  margin:0;
+	  padding:0;
+}
+
+*, *:before, *:after {
+   	box-sizing: inherit;
+}
+/***************** BODY ******************** */
+body {
+      background-color: #F3EDD3;/******color: jaunatre ** */
+}
+header{
+	  text-align: right;
+	  margin :0 auto;
+	  font-size: 2rem;
+	/******** */
+	  background-color: #F3EDD3;/******color: jaunatre ** */
+      }
+main {	 
+	  text-align: center;
+	  margin :0 auto;
+	  font-size: 1.8rem;
+	/******** */
+	  background-color: #F3EDD3;/******color: jaunatre ** */
+     }
+
+img{
+	width:150px;
+   	height:150px;
+  }
+  
+h1{
+	  font-size: 5rem;
+	  color: #113F59; /* bleu profond*/
+	}
+h3  {
+   	color:#336600;  /* vert profond*/
+    font-size:3rem;
+    }
+h2 {
+   	color:#660066;  /* violet profond*/  
+   font-size:4rem;
+    }
+p   {
+     color:black;  /* black*/  
+     font-size:20px;
+    }
+    
+#affichereservation{
+        width:50%;
+        padding-bottom: 10px;
+		margin: 0 auto;
+		list-style: none;	  	
+		display: flex;	  
+		-webkit-flex-flow: column ;
+		justify-content:flex-start; 
+		padding: 20px;
+		background: #D7B1B1;
+		border: 1px solid #0b06f7;
+		border-radius: 10px;
+	    } 
+	     
+ .infosclient{
+			 color:white;
+			 background-color: aqua;
+        }
+
+ .plat {
+		padding: 20px;
+		background: #D7B1B1;
+		border: 1px solid #bbbbbb;
+		border-radius: 10px;
+		width:50%;
+		margin :0 auto;
+		border:2px dotted white;
+	  }
+.colonne{
+        width:50%;
+        padding: 0;
+		margin: 0 auto;
+		list-style: none;	  
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;	  
+		-webkit-flex-flow: column ;
+		justify-content:flex-start; 
+	    }
+
+img.big{
+	  	width:300px;
+	  	height:300px;
+   }
+
+  a{
+  	text-decoration:none;
+  	margin-right:5px;  
+	background-color: #CAF2CD;
+	font-size: 2rem;
+	color: tomato;
+	border-radius: 10%;
+   }
+
+   #plat2  {
+		padding: 20px;
+		color: grey;
+		background: #D7B1B1;
+		border: 1px solid #bbbbbb;
+		border-radius: 10px;
+		width:50%;
+		margin :0 auto;
+		border:2px dotted white;
+	  }
+
+  

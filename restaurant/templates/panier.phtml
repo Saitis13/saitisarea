@@ -1,0 +1,48 @@
+<?php
+require_once('templates/partials/header.phtml');?>
+
+<main>
+		
+		<h1> Votre panier </h1>
+
+		<div id="plat2">
+	       <?php if (!empty($_SESSION['panier'])):?>
+					<?php foreach ($_SESSION['panier'] as  $element) :?>
+						<?php if (!empty($element[4])):?>
+												<div id="ligne">
+												    <p>vous avez choisi: </p>
+													<img src="<?=$element[3]?>" alt=<?=$element[1]?> />
+													<h3>  <?=$element[1]?></h3>
+											        <p> en <?=$element[4]?> exemplaire(s) </p>
+													<p> prix unitaire: <?= floatval($element[2]) ?> €</p>
+													<?php $nbproduits = $nbproduits +  $element[4]?> 
+													<?php $montantCommande = $montantCommande + floatval($element[2])* $element[4]?> 
+													<p> prix pour cette ligne: <?= floatval($element[2])* $element[4]?> €</p>
+													<p>Quantite:</p>
+													<a href="libraries/application.php?task=panier&id=<?=$element['0']?>&origine=panier">  +1  </a> 
+													<a href="libraries/application.php?task=panier-&id=<?=$element['0']?>"> -1 </a>										
+												</div>
+						<?php endif ; ?>					 
+					<?php endforeach ; ?>
+				
+					<form id="txt-center" action="" method="POST">
+						<p> Votre commande est composée de : <span><?=$nbproduits?></span>  articles - Le montant a payer est de <span><?=$montantCommande?></span> €</p>
+						<button type="submit">Enregistrer!</button>
+					</form>
+					<!--icone paiement  ---->
+					<div id="moyenpaiement">
+								<img class="moyenpaiement2" src="images/payment/mastercard.png" alt="mastercard">
+								<img class="moyenpaiement2" src="images/payment/paypal.png" alt="paypal">
+								<img class="moyenpaiement2" src="images/payment/visa.png" alt="visa">
+							</div>
+
+			<?php else : ?>
+				<p>Votre panier est vide  : <span> 0 </span>  articles - Le montant a payer est de <span>0</span>€</i></p3>
+			<?php endif ; ?>
+ 		</div >
+			
+
+</main>
+<?php
+require_once('templates/partials/footer.phtml');
+?>

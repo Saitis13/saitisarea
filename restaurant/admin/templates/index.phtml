@@ -1,0 +1,22 @@
+<?php require_once('templates/partials/header.phtml');?>
+	<main>		
+		<h2> LISTE DES RESERVATIONS </h2>
+
+		<div >
+			<?php foreach ($reservations as  $reservation) :?>	
+			<div id="affichereservation">
+				<div id="infosclient">
+					<p>Nom du client: <?=$reservation['nom']?></p>
+					<p>Prénom du client: <?=$reservation['prenom']?></p>
+					<p>email du client: <?=$reservation['email']?></p>
+				</div>
+	
+			    <div id="table">
+					<p>date :<?=$reservation['date']?></p>
+					<p>Message du client : <?=$reservation['message']?></p>
+					<p>nb de convives: <?=$reservation['nb_personnes']?></p>
+				</div>
+            </div>
+            <?php endforeach ; ?>
+		</div>
+<?php require_once('templates/partials/footer.phtml');?>

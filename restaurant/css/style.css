@@ -1,0 +1,190 @@
+
+html {
+	  box-sizing: border-box;
+	  font-size: 62.5%; 
+	  margin:0;
+	  padding:0;
+	  
+}
+
+*, *:before, *:after {
+   	box-sizing: inherit;
+}
+/***************** BODY ******************** */
+body {
+      background-color: #F3EDD3;/******color: jaunatre ** */    
+}
+header{
+	  text-align: right;
+	  margin :0 auto;
+	  font-size: 2rem;
+      }
+
+footer{
+      text-align: right;
+	  margin :0 auto;
+	  font-size: 2rem;
+	  /******** */
+	  background-color: #F3EDD3;/******color: jaunatre ** */
+      }
+
+main {
+	  text-align: center;
+	  margin :0 auto;
+	  font-size: 1.8rem;
+	/******** */
+	  background-color: #F3EDD3;/******color: jaunatre ** */
+     }
+h1{
+	  font-size: 5rem;
+	  color: #113F59; /* bleu profond*/
+	}
+h3  {
+   	  font-size:25px;
+    }
+
+h4  {
+   	  background-color: rgba(243,237,211,06);/******color: jaunatre ** */
+   	  color: #716E5D;/* vert eau */
+   	  font-size:25px;
+    }
+p   {
+      font-size:20px;
+    }
+ #infos p{
+	 color: #113F59; /* bleu profond*/
+	 background-color: #F3EDD3;/******color: jaunatre ** */
+ }
+ span{
+ 	font-weight: Bold;
+ }
+ 
+#infos{
+	  background-color: #F3EDD3;
+	  margin-top:20px;
+	  padding:20px;
+	  color:#D7B1B1;
+	  border: 1px solid #bbbbbb;
+	  border-radius: 10px;    
+      
+	 /*-background: url(http://lorempixel.com/output/city-q-c-640-480-2.jpg) no-repeat center fixed; */
+	 
+}
+ul{
+	margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    background-color: gray;
+    border: 1px solid #bbbbbb;
+	border-radius: 10px;    
+      
+}
+li{
+	font-weight: Bold;
+    text-align: left;
+	color: #113F59; /* bleu profond*/
+	list-style-type: none;
+}
+#infos2{
+	  width:100%;
+	  height:100%;
+      background-repeat: no-repeat;
+      background: url(../images/imagedefond.jpg) no-repeat center ; 
+      }
+#right{
+	  color:rgba(248, 217, 253, 1);
+      background-color:aqua;  background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background: url(../images/imagedefond.jpg) no-repeat center ; 
+	 /*-background: url(http://lorempixel.com/output/city-q-c-640-480-2.jpg) no-repeat center fixed; */
+	  background-color: #F3EDD3;}
+
+#colonne{
+        width:50%;
+        padding: 0;
+		margin: 0 auto;
+		list-style: none;	  
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;	  
+		-webkit-flex-flow: column ;
+		justify-content:flex-start; 
+	    }
+
+#f-reservation{
+      color:rgba(248, 217, 253, 1);
+      background-color:aqua;  background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background: url(../images/imagedefond.jpg) no-repeat center ; 
+	 /*-background: url(http://lorempixel.com/output/city-q-c-640-480-2.jpg) no-repeat center fixed; */
+	  background-color: #F3EDD3;
+	  }
+
+img{
+	  	width:200px;
+	  	height:200px;
+  }
+#elements{
+		margin :0 auto;
+		text-align :center;
+		width:80%;
+		background-color:gray;
+}
+#plat{
+		padding: 20px;
+		background: #D7B1B1;
+		border: 1px solid #bbbbbb;
+		border-radius: 10px;
+		width:50%;
+		margin :0 auto;
+		border:2px dotted white;
+	}
+
+ .moyenpaiement2  {
+        width:50px;
+	  	height:50px;
+	}
+#ligne{
+        width:80%;
+        padding: 0;
+		margin: 0 auto;
+		list-style: none;	  
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;	  
+		-webkit-flex-flow: row ;
+		justify-content:space-between;
+		align-items: center ;
+		border: 1px solid #113f59;
+	    }
+#plat2{
+		padding: 20px;
+		background: #D7B1B1;
+		border: 1px solid #bbbbbb;
+		border-radius: 10px;
+		margin :0 auto;
+		border:2px dotted #bbbbbb ;
+	}
+.affichereservation{
+	    border-radius: 10px;
+		margin :0 auto;
+		border:2px dotted rgba(19, 17, 17, 0.84); ;
+         }
+#txt-center{
+	text-align: center;
+}
+
+#caddy{
+	width: 5%;
+	height:5%;
+} 
+a{
+	border-radius:50%;
+	background-color:white;
+	text-decoration: none;
+}
+         /**********************  fin de fichier   ********************/ 

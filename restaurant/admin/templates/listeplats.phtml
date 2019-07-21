@@ -1,0 +1,48 @@
+<?php require_once('templates/partials/header.phtml');?>
+<main>
+		
+		<h2> Liste des  plats </h2>
+		<div id="listeplats">
+			<div id="elements">
+			   <h3> Nos entrées</h3>
+				<?php foreach ($entrees as  $entree) :?>
+					<div class="plat">
+						<p> <img src="<?=$entree['image']?>" alt=<?=$entree['titre']?></p>
+						<h4>Titre du plat:<?=$entree['titre']?></h4>
+				        <p> Description <?=$entree['description']?></p>
+						<p> Mon prix:<?=$entree['prix']?> euros</p> 
+						<a href="libraries/application.php?task=supprimer&id=<?=$entree['id']?>">Supprimer ce plat </a>
+						<a href="modifierplat.php?id=<?=$entree['id']?>">Modifier ce plat </a>
+					 </div>  		
+					<?php endforeach ; ?>		
+			</div>
+
+			<div id="elements">
+			   <h3> Nos plats</h3>
+				<?php foreach ($plats as  $plat) :?>
+					<div class="plat">
+						<p> <img src="<?=$plat['image']?>" alt=<?=$plat['titre']?></p>
+						<h4>Titre du plat: <?=$plat['titre']?></h4>
+				        <p> Description: <?=$plat['description']?></p>
+						<p> mon prix:<?=$plat['prix']?> euros</p>
+						<a href="libraries/application.php?task=supprimer&id=<?=$plat['id']?>">Supprimer ce plat </a>
+						<a href="modifierplat.php?id=<?=$plat['id']?>">Modifier ce plat </a>							
+				    </div> 
+				<?php endforeach ; ?>
+			</div>
+
+			<div id="elements">
+			   <h3> Nos desserts</h3>
+				<?php foreach ($desserts as $dessert) :?>
+					<div class="plat">
+						<p> <img src="<?=$dessert['image']?>" alt=<?=$dessert['titre']?></p>
+						<h4>Titre du plat: <?=$dessert['titre']?></h4>
+				        <p> Description: <?=$dessert['description']?></p>
+						<p> mon prix:<?=$dessert['prix']?> euros</p>
+						<a href="libraries/application.php?task=supprimer&id=<?=$dessert['id']?>">Supprimer ce plat </a>
+						<a href="modifierplat.php?id=<?=$dessert['id']?>">Modifier ce plat </a>					
+					</div> 
+				<?php endforeach ; ?>
+			</div>
+        </div>
+<?php require_once('templates/partials/footer.phtml');?>
